@@ -1,6 +1,19 @@
 [project]
-name = "ma2015-201-planta-fisica"
+name = "equipo-5-plantafisica"
 version = "0.1.0"
-description = "Base docente reproducible del reto Planta Física"
-requires-python = ">=3.12,<3.15"
-dependencies = ["numpy==2.3.5", "matplotlib>=3.10,<4", "jupyterlab>=4.4,<5", "ipykernel>=6.30,<8"]
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "jose-manuel", email = "jose-manuel@localhost" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "ipykernel>=7.4.0",
+]
+
+[project.scripts]
+equipo-5-plantafisica = "equipo_5_plantafisica:main"
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14.0"]
+build-backend = "uv_build"
